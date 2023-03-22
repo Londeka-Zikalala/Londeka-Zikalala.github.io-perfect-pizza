@@ -40,7 +40,7 @@ color:#fd9e02;
 
 .small{
     background-color:#219ebc;
-    margin-right;0px
+    margin-right:0px;
 }
 .med{
     background-color:#8ecae6;
@@ -81,7 +81,21 @@ color:#fd9e02;
     .main{
         display:flex;
         flex-direction: column;
-        width: auto;
+        width:justify;
+        text-align:justify;
+    }
+    .med,.small,.large{
+    padding: 30px 20px 30px 20px;
+    width: auto;
+    height: auto;
+    margin-bottom:15px;
+    }
+    .icons{
+        float:right;
+        padding:0px;
+        margin:0px;
+    }
+
     }
     .footer{
         width:auto;
