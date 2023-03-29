@@ -2,6 +2,14 @@ body{
     background-color:#fb8500;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-style:italic;
+    font-size: large;
+    font-weight: 100;
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-bottom: 50px;
+    padding-top: 50px;
+    align-items: center;
+    width:1250px;
 }
 
 h1{
@@ -10,6 +18,9 @@ h1{
     border: 2.5px #ffb703 solid;
 }
 
+.header{
+    width:1200px;
+}
 h2{
 color:#fd9e02;
 
@@ -19,14 +30,17 @@ color:#fd9e02;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    margin-left: 55px;
-    margin-right:40px;
+    margin-left: 0px;
+    margin-right:55px;
+    padding-left: 0px;
+    padding-right:40px;
+    width: 1200px;
     
 }
 .med,.small,.large{
     padding: 30px 20px 30px 20px;
-    width: 350px;
-    height: 335px;
+    width: 400px;
+    height: 600px;
     margin-bottom:15px;
 
 }
@@ -46,11 +60,12 @@ color:#fd9e02;
 }
 .footer{
     background-color: #ffb703;
-    padding:0px;
+    padding-left:0px;
+    padding-right:0px;
     margin-top: 5px;
     margin-bottom: 5px;
-    margin-left: 55px;
-    margin-right: 40px;
+    margin-left: 0px;
+    margin-right: 55px;
     width: 1200px;
     
 }
@@ -74,18 +89,32 @@ color:#fd9e02;
    padding-right: 10px;
 }
 
-@media(max-width:700px){
+@media(max-width:500px){
+    body{
+        padding-left:0;
+        padding-right: 0px;
+        padding-top: 80px;
+        padding-bottom: 80px;
+        width: 450px;
+        font-size: large;
+        font-weight: 100;
+    }
 
     .main{
         display:flex;
         flex-direction: column;
-        width:justify;
-        text-align:justify;
+        width: fit-content;
+        text-align:space-between;
+        align-items: center;
+        width:400px;
     }
     .med,.small,.large{
-    padding: 30px 20px 0px 20px;
-    width: auto;
-    height:335px ;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 300px;
+    height:350px ;
     margin-bottom:15px;
     text-align: justify;
     }
@@ -93,9 +122,38 @@ color:#fd9e02;
         float:right;
         padding:0px;
         margin:0px;
+        width: auto;
+    }
+   
+.h1{
+    text-align:start;
+    border: 1.5px #ffb703 solid;
+
+}
+.header{
+    width:400px;
+}
+    .footer{
+        display:flex;
+        flex-direction: row;
+        align-items: space-between;
+        width:350px;
+        margin-top: 10px;
+        align-items: center;
+        padding-left: 20px;
+         padding-right: 20px;
+         padding-top: 15px;
+        padding-bottom: 15px;
     }
 
-    .footer{
-        width:auto;
+    .left-footer{
+        float: left;
+        padding: auto;
+    }
+
+    .right-footer{
+        float: right;
+        padding-left: 25px;
     }
 }
+
