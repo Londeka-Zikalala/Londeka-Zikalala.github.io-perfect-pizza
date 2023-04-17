@@ -1,7 +1,7 @@
-html, body{
+ body{
     background-color:#fb8500;
-    padding: 0;
-    margin: 0;
+    padding: auto;
+    margin: auto;
     left: 0;
     top: 0;
     width:100%;
@@ -385,8 +385,8 @@ container{
     
         .left-footer{
             float: left;
-            padding-left:auto;
-            padding-right:0em;
+            padding-left:0em;
+            padding-right:auto;
             padding-top:0em;
             padding-bottom: 0em;
             margin-top: 0em;
@@ -395,8 +395,8 @@ container{
     
         .right-footer{
             float: right;
-            padding-left:0em;
-            padding-right:auto;
+            padding-left:auto;
+            padding-right:0em;
             padding-top:0em;
             padding-bottom: 0em;
             margin-top: 0em;
